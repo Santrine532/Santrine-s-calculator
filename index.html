@@ -17,45 +17,46 @@
           </div>
           <div>
             <!-- clear all -->
-            <input type="button" value="AC" class="clear" />
+            <input type="button" value="AC" class="clear" onclick="cleaarDisplay()"/>
             <!-- delete from the last appended string -->
-            <input type="button" value="DEL" />
+            <input type="button" value="DEL" onclick="deleteValue()"/>
             <!-- divide -->
-            <input type="button" value="/" />
+            <input type="button" value="/" onclick="appendvalue('/')" />
           </div>
           <div>
             <!-- number -->
-            <input type="button" value="1" />
-            <input type="button" value="2" />
-            <input type="button" value="3" />
+            <input type="button" value="1" onclick="appendvalue('1')"/>
+            <input type="button" value="2" onclick="appendvalue('2')"/>
+            <input type="button" value="3" onclick="appendvalue('3')"/>
             <!-- multiply -->
-            <input type="button" value="*" />
+            <input type="button" value="*" onclick="appendvalue('*')"/>
           </div>
           <div>
             <!-- number -->
-            <input type="button" value="4" />
-            <input type="button" value="5" />
-            <input type="button" value="6" />
+            <input type="button" value="4" onclick="appendvalue('4')"/>
+            <input type="button" value="5" onclick="appendvalue('5')"/>
+            <input type="button" value="6" onclick="appendvalue('6')"/>
             <!-- addition -->
-            <input type="button" value="+" />
+            <input type="button" value="+" onclick="appendvalue('+')"/>
           </div>
           <div>
             <!-- number -->
-            <input type="button" value="7" />
-            <input type="button" value="8" />
-            <input type="button" value="9" />
+            <input type="button" value="7" onclick="appendvalue('7')"/>
+            <input type="button" value="8" onclick="appendvalue('8')"/>
+            <input type="button" value="9" onclick="appendvalue('9')"/>
             <!-- subtruction -->
-            <input type="button" value="-" />
+            <input type="button" value="-" onclick="appendvalue('-')"/>
           </div>
           <div>
             <!-- decimal -->
-            <input type="button" value="." />
-            <input type="button" value="0" />
+            <input type="button" value="." onclick="appendvalue('.')"/>
+            <input type="button" value="0" onclick="appendvalue('0')"/>
             <!-- equals -->
-            <input type="button" value="=" class="equal"/>
+            <input type="button" value="=" class="equal" onclick="calculate()"/>
           </div>
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
